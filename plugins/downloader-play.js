@@ -8,23 +8,23 @@ if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 �
 try {
 const yt_play = await search(args.join(" "))
 let additionalText = ''
-if (command === 'play') {
+if (command === 'song') {
 additionalText = 'audio 🔊'
-} else if (command === 'play2') {
+} else if (command === 'video') {
 additionalText = 'video 🎥'}
 let texto1 = `*◉——⌈🔊 YOUTUBE PLAY 🔊⌋——◉*\n
-❏ 📌 *Titulo:* ${yt_play[0].title}
-❏ 📆 *Publicado:* ${yt_play[0].ago}
+❏ 📌 *Title:* ${yt_play[0].title}
+❏ 📆 *Published:* ${yt_play[0].ago}
 ❏ ⌚ *Duracion:* ${secondString(yt_play[0].duration.seconds)}
-❏ 👀 *Vistas:* ${`${MilesNumber(yt_play[0].views)}`}
+❏ 👀 *Viwes:* ${`${MilesNumber(yt_play[0].views)}`}
 ❏ 👤 *Autor:* ${yt_play[0].author.name}
-❏ ⏯️ *Canal:* ${yt_play[0].author.url}
+❏ ⏯️ *Chanel:* ${yt_play[0].author.url}
 ❏ 🆔 *ID:* ${yt_play[0].videoId}
 ❏ 🪬 *Tipo:* ${yt_play[0].type}
 ❏ 🔗 *Link:* ${yt_play[0].url}\n
-❏ *_Enviando ${additionalText}, aguarde un momento．．．_*`.trim()
+❏ *AUDIO/VIDEO COOMIG SOON!*`.trim()
 conn.sendMessage(m.chat, { image: { url: yt_play[0].thumbnail }, caption: texto1 }, { quoted: m })
-if (command == 'play') {
+if (command == 'song') {
 try {
 let q = '128kbps'
 let v = yt_play[0].url
@@ -49,7 +49,7 @@ conn.sendMessage(m.chat, { audio: { url: ress.url }, fileName: __res[0].title + 
 } catch {
 await conn.reply(m.chat, '*[❗] 𝙴𝚁𝚁𝙾𝚁 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝙴𝙻 𝙰𝚄𝙳𝙸𝙾*', m)}}}
 }  
-if (command == 'play2') {
+if (command == 'video') {
 try {
 let qu = '360'
 let q = qu + 'p'
@@ -77,9 +77,9 @@ await conn.reply(m.chat, '*[❗] 𝙴𝚁𝚁𝙾𝚁 𝙽𝙾 𝙵𝚄𝙴 𝙿
 }} catch {
 throw "*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*"}
 }
-handler.help = ["play", "play2"].map((v) => v + " < busqueda >")
+handler.help = ["song", "video"].map((v) => v + " < busqueda >")
 handler.tags = ["downloader"]
-handler.command = /^play2?$/i
+handler.command = /^video?$/i
 export default handler
 
 async function search(query, options = {}) {
