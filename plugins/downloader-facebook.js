@@ -53,7 +53,7 @@ try {
 let res3 = await fetch(`https://latam-api.vercel.app/api/facebookdl?apikey=brunosobrino&q=${args[0]}`)  
 let json = await res3.json()
 let url3 = await json.video
-await conn.sendFile(m.chat, url3, 'error.mp4', '*𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝚂𝚄 𝚅𝙸𝙳𝙴𝙾*', m)         
+await conn.sendFile(m.chat, url3, 'error.mp4', '*DARK SONIC FB DL*', m)         
 } catch (err6) {
 console.log('6 ' + err6)    
 try {
