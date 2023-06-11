@@ -109,11 +109,11 @@ getMessage: async (key) => {
 if (store) {
 const msg = await store.loadMessage(key.remoteJid, key.id)
 return msg.message || undefined }
-return { conversation: "hello, i'm BrunoSobrino" }},   
+return { conversation: "hello, i'm IMALSHA" }},   
 msgRetryCounterMap,
 logger: pino({ level: 'silent' }),
 auth: state,
-browser: ['MysticBot','Safari','9.7.0'],
+browser: ['DARK SONIC','Safari','9.7.0'],
 version   
 }
 
@@ -220,10 +220,10 @@ global.timestamp.connect = new Date
 }
 if (global.db.data == null) loadDatabase()
 if (update.qr != 0 && update.qr != undefined) {
-console.log(chalk.yellow('🚩ㅤEscanea este codigo QR, el codigo QR expira en 60 segundos.'))
+console.log(chalk.yellow('🚩 QR expire , AFTER 60 SECOND.'))
 }
 if (connection == 'open') {
-console.log(chalk.yellow('▣──────────────────────────────···\n│\n│❧ 𝙲𝙾𝙽𝙴𝙲𝚃𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴 𝙰𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 ✅\n│\n▣──────────────────────────────···'))}
+console.log(chalk.yellow('▣──────────────────────────────···\n│\n│❧ BOT CONECTED SUCSSFULLY ✅\n│\n▣──────────────────────────────···'))}
 if (connection == 'close') {
 console.log(chalk.yellow(`🚩ㅤConexion cerrada, por favor borre la carpeta ${global.authFile} y reescanee el codigo QR`))}
 }
@@ -256,8 +256,8 @@ conn.ev.off('connection.update', conn.connectionUpdate)
 conn.ev.off('creds.update', conn.credsUpdate)
 }
   
-conn.welcome = '*╔══════════════*\n*╟❧ @subject*\n*╠══════════════*\n*╟❧ @user*\n*╟❧ 𝙱𝙸𝙴𝙽𝚅𝙴𝙽𝙸𝙳𝙾/𝙰* \n*║*\n*╟❧ 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽 THIS GROUP:*\n\n@desc\n\n*║*\n*╟❧ 𝙳𝙸𝚂𝙵𝚁𝚄𝚃𝙰 𝚃𝚄 𝙴𝚂𝚃𝙰𝙳𝙸𝙰!!*\n*╚══════════════*'
-conn.bye = '*╔══════════════*\n*╟❧ @user*\n*╟❧ 𝙷𝙰𝚂𝚃𝙰 𝙿𝚁𝙾𝙽𝚃𝙾 👋🏻* \n*╚══════════════*'
+conn.welcome = '*╔══════════════*\n*╟❧ @subject*\n*╠══════════════*\n*╟❧ @user*\n*╟❧ WELCOME/𝙰* \n*║*\n*╟❧ 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽 THIS GROUP:*\n\n@desc\n\n*║*\n*╟❧ POWERD BY DARK SONIC BOT!!*\n*╚══════════════*'
+conn.bye = '*╔══════════════*\n*╟❧ @user*\n*╟❧ GOOD BYE 👋🏻* \n*╚══════════════*'
 conn.spromote = '*@user 𝚂𝙴 𝚂𝚄𝙼𝙰 𝙰𝙻 𝙶𝚁𝚄𝙿𝙾 𝙳𝙴 𝙰𝙳𝙼𝙸𝙽𝚂!!*'
 conn.sdemote = '*@user 𝙰𝙱𝙰𝙽𝙳𝙾𝙽𝙰 𝙴𝙻 𝙶𝚁𝚄𝙿𝙾 𝙳𝙴 𝙰𝙳𝙼𝙸𝙽𝚂 !!*'
 conn.sDesc = '*𝚂𝙴 𝙷𝙰 𝙼𝙾𝙳𝙸𝙵𝙸𝙲𝙰𝙳𝙾 𝙻𝙰 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾*\n\n*𝙽𝚄𝙴𝚅𝙰 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽:* @desc'
@@ -408,7 +408,7 @@ if (stopped == 'close') return
 const status = global.db.data.settings[conn.user.jid] || {}
 let _uptime = process.uptime() * 1000    
 let uptime = clockString(_uptime)
-let bio = `🤖 Time ᴀᴄᴛɪᴠᴏ: ${uptime} ┃ 👑 ʙʏ DARK SONIC ┃ 🔗 CREATER: IMALSHA `
+let bio = `🤖 Time ᴀᴄᴛɪᴠe: ${uptime} ┃ 👑 BY DARK SONIC ┃ 🔗 CREATER: IMALSHA `
 await conn.updateProfileStatus(bio).catch(_ => _)
 }, 60000)
 function clockString(ms) {
