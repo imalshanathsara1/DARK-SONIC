@@ -9,7 +9,7 @@ if (searchA.length < 1) return await  conn.sendMessage(m.chat, { text: '*[❗]PR
 var srh = [];  
 for (var i = 0; i < searchA.length; i++) {
 srh.push({ title: searchA[i].name, description: '', rowId: prefix + 'dapk2 ' + searchA[i].id });}
-const sections = [{title: '𝚂𝙴𝙻𝙴𝙲𝙲𝙸𝙾𝙽𝙰 𝙴𝙻 𝙼𝙾𝙳 𝙰 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁', rows: srh}]
+const sections = [{title: 'SELECT MOD APK', rows: srh}]
 const listMessage = {text: `┌───[ᴍᴏᴅᴀᴘᴋ ʙʏ DARK SONIC]\n│\n│- 📟 𝚁𝙴𝚂𝚄𝙻𝚃𝙰𝙳𝙾𝚂 𝙳𝙴: ${text}\n│\n└─────────────────◉`, footer: wm, title: null, buttonText: "MOD APK", sections}
 await conn.sendMessage(m.chat, listMessage, { quoted: m })
 break
