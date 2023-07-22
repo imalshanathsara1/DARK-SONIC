@@ -38,10 +38,10 @@ global.igfg = '★DARK QUEEN★'
 global.wait = '*[❗]WAITE.*'
 
 global.imagen1 = fs.readFileSync('./Menu3.png')
-global.imagen2 = fs.readFileSync('./src/nuevobot.jpg') 
-global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png')
+global.imagen2 = fs.readFileSync('./Menu3.png') 
+global.imagen3 = fs.readFileSync('./Menu3.png')
 global.imagen4 = fs.readFileSync('./Menu3.png')
-global.imagen5 = fs.readFileSync('./src/+18.jpg')
+global.imagen5 = fs.readFileSync('./Menu3.png')
 
 global.mods = [] 
 
