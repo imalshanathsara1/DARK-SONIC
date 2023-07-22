@@ -4,7 +4,7 @@ import ytdl from 'ytdl-core'
 import axios from 'axios'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 let handler = async (m, { conn, command, args, text, usedPrefix }) => {
-if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗]error*\n\n*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*${usedPrefix + command} Good Feeling - Flo Rida*`
+if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗]error*\n\n*—◉:*\n*${usedPrefix + command} Good Feeling - Flo Rida*`
 try {
 const yt_play = await search(args.join(" "))
 let additionalText = ''
