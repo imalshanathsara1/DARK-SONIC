@@ -8,21 +8,21 @@ if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗]error*\n\n*—◉:*\n*${usedPrefix + 
 try {
 const yt_play = await search(args.join(" "))
 let additionalText = ''
-if (command === 'play') {
+if (command === 'song') {
 additionalText = 'audio 🔊'
-} else if (command === 'play2') {
+} else if (command === 'video') {
 additionalText = 'video 🎥'}
 let texto1 = `*◉——⌈🔊 YOUTUBE PLAY 🔊⌋——◉*\n
-❏ 📌 *Titulo:* ${yt_play[0].title}
-❏ 📆 *Publicado:* ${yt_play[0].ago}
+❏ 📌 *Title:* ${yt_play[0].title}
+❏ 📆 *Public:* ${yt_play[0].ago}
 ❏ ⌚ *Duracion:* ${secondString(yt_play[0].duration.seconds)}
-❏ 👀 *Vistas:* ${`${MilesNumber(yt_play[0].views)}`}
-❏ 👤 *Autor:* ${yt_play[0].author.name}
-❏ ⏯️ *Canal:* ${yt_play[0].author.url}
+❏ 👀 *Viwes:* ${`${MilesNumber(yt_play[0].views)}`}
+❏ 👤 *Author:* ${yt_play[0].author.name}
+❏ ⏯️ *Chanel:* ${yt_play[0].author.url}
 ❏ 🆔 *ID:* ${yt_play[0].videoId}
-❏ 🪬 *Tipo:* ${yt_play[0].type}
+❏ 🪬 *Type:* ${yt_play[0].type}
 ❏ 🔗 *Link:* ${yt_play[0].url}\n
-❏ *_Enviando ${additionalText}, aguarde un momento．．．_*`.trim()
+❏ *⚔DARK QUEEN_ ${additionalText}, please waite!．．．_*`.trim()
 conn.sendMessage(m.chat, { image: { url: yt_play[0].thumbnail }, caption: texto1 }, { quoted: m })
 if (command == 'play') {
 try {
