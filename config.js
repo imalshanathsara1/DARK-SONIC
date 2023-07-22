@@ -8,11 +8,11 @@ import axios from 'axios'
 import moment from 'moment-timezone' 
 
 global.owner = [
-  ['5219992095479', '👑 Mystic - Creador 👑', true],
+  ['94718628230', '👑 dark oueen - Creador 👑', true],
   ['50499698072', '💫 Mystic - Collaborator 1 💫', true],
   ['51940617554', '💫 Mystic - Collaborator 2 💫', true],
   ['51996089079', '💫 Mystic - Collaborator 3 💫', true],
-  ['593959425714', '💫 Mystic - Collaborator 4 💫', true],
+  ['5218442286089', '💫 Mystic - Collaborator 4 💫', true],
   ['50246028932', '💫 Mystic - Collaborator 5 💫', true],  
   ['5212411719888', '💫 Mystic - Collaborator 6 💫', true],
   ['5215533827255', '💫 Mystic - Collaborator 7 💫', false],
@@ -23,22 +23,25 @@ global.owner = [
   ['5492266466080'],
   ['5219996125657'],
   ['5492266613038'],
-  ['5218442114446']
+  ['5218442114446'],
+  ['59894808483']
 ] 
 
-global.suittag = ['5219993404349'] 
-global.prems = ['51995386439'] 
+global.suittag = ['54718628230'] 
+global.prems = ['94718628230'] 
+global.reportes_solicitudes = ['94718628230']
 
 global.packname = '(☞ﾟ∀ﾟ)☞'
-global.author = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
-global.wm = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
-global.igfg = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
-global.wait = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
+global.author = '★DARK QUEEN★'
+global.wm = '★DARK QUEEN★'
+global.igfg = '★DARK QUEEN★'
+global.wait = '*[❗]WAITE.*'
 
-global.imagen1 = fs.readFileSync('./Menu2.jpg')
+global.imagen1 = fs.readFileSync('./queen%20md.png')
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg') 
 global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png')
 global.imagen4 = fs.readFileSync('./Menu.png')
+global.imagen5 = fs.readFileSync('./src/+18.jpg')
 
 global.mods = [] 
 
