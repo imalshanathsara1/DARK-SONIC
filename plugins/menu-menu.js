@@ -3,7 +3,7 @@ let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isP
 if (usedPrefix == 'a' || usedPrefix == 'A') return    
 try {
 let pp = imagen4
-let vn = './media/queen.mp3'
+let pt = './media/queen.mp3'
 let img =  './DARK.jpg'
 let d = new Date(new Date + 3600000)
 let locale = 'es'
@@ -23,69 +23,70 @@ var document = doc[Math.floor(Math.random() * doc.length)]
 let str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
 ║    ◉— *ᴅᴀʀᴋ Qᴜᴇᴇɴ* —◉
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
-👋*𝗛ello, ${taguser}*
+👋 𝗛ello, ${taguser}
 
-🧒*Owner:* *IMALSHA*
+🧒 Owner:* *IMALSHA
 
-⚔*Number:* wa.me/94718628230
+⚔ Number:* wa.me/94718628230
 
-🖥*Bot ofc:* wa.me/94740196225
+🖥 Bot ofc:* wa.me/94740196225
 
-⏰*Runtime:* ${uptime}
+⏰ Runtime:* ${uptime}
+
 ╰═══╡✯✯✯✯✯✯✯✯✯╞═══╯
 
-🔮*.Menu*
-💠*get bot menu list*
+🔮.ᴍᴇɴᴜ
+💠ɢᴇᴛ ʙᴏᴛ ᴍᴇɴᴜ ʟɪꜱᴛ
 
-🔮*song*
-💠*Get download your any song*
+🔮*ꜱᴏɴɢ*
+💠ɢᴇᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʏᴏᴜʀ ᴀɴʏ ꜱᴏɴɢ
 
-🔮*xnxxdl*
-💠*Get download your xnxx video*
+🔮xɴxxᴅʟ
+💠ɢᴇᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʏᴏᴜʀ xɴxx ᴠɪᴅᴇᴏ
 
-🔮*fbdl*
-💠*get download your fb video*
+🔮ꜰʙᴅʟ
+💠ɢᴇᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʏᴏᴜʀ ꜰʙ ᴠɪᴅᴇᴏ
 
-🔮*owner*
-💠*get owner number*
+🔮ᴏᴡɴᴇʀ
+💠ɢᴇᴛ ᴏᴡɴᴇʀ ɴᴜᴍʙᴇʀ
 
-🔮*video*
-💠*get download yt video*
+🔮ᴠɪᴅᴇᴏ
+💠ɢᴇᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʏᴛ ᴠɪᴅᴇᴏ
 
-🔮*xvideosdl*
-💠*get download your xvideo*
+🔮xᴠɪᴅᴇᴏꜱᴅʟ
+💠ɢᴇᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʏᴏᴜʀ xᴠɪᴅᴇᴏ
 
-🔮*tiktok*
-💠*get download your tiktok video*
+🔮ᴛɪᴋᴛᴏᴋ
+💠ɢᴇᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʏᴏᴜʀ ᴛɪᴋᴛᴏᴋ ᴠɪᴅᴇᴏ
 
-🔮*gdrive*
-💠*get download your gdrive link*
+🔮ɢᴅʀɪᴠᴇ
+💠ɢᴇᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʏᴏᴜʀ ɢᴅʀɪᴠᴇ ʟɪɴᴋ
 
-🔮*mediafire*
-💠*get download mediafire file*
+🔮ᴍᴇᴅɪᴀꜰɪʀᴇ
+💠ɢᴇᴛ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇᴅɪᴀꜰɪʀᴇ ꜰɪʟᴇ
 
-🔮*wallpaper*
-💠*get download wallpaper*
+🔮ᴡᴀʟʟᴘᴀᴘᴇʀ
+💠ɢᴇᴛ ᴅᴏᴡɴʟᴏᴀᴅ ᴡᴀʟʟᴘᴀᴘᴇʀ
 
-🔮*ringtone*
-💠*get download ringtone*
+🔮ʀɪɴɢᴛᴏɴᴇ
+💠ɢᴇᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʀɪɴɢᴛᴏɴᴇ
 
-🔮*spotify*
-💠*get download spotify*
+🔮ꜱᴘᴏᴛɪꜰʏ
+💠ɢᴇᴛ ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴘᴏᴛɪꜰʏ
 
          
-         ⚔*GROUP MENU*⚔
+         ⚔ɢʀᴏᴜᴘ ᴍᴇɴᴜ⚔
 
-🔮*Kick*
-💠*kick participant in group*
+🔮ᴋɪᴄᴋ
+💠ᴋɪᴄᴋ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ ɪɴ ɢʀᴏᴜᴘ
 
-🔮*add*
-💠*add participant in group*
+🔮ᴀᴅᴅ
+💠ᴀᴅᴅ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ ɪɴ ɢʀᴏᴜᴘ
 
-🔮*promote*
-💠*participant promote to admin*
+🔮ᴘʀᴏᴍᴏᴛᴇ
+💠ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ ᴘʀᴏᴍᴏᴛᴇ ᴛᴏ ᴀᴅᴍɪɴ
 
-📌*OTHER MENU COMMING SOON!*📌`.trim()
+📌*ᴏᴛʜᴇʀ ᴍᴇɴᴜ ᴄᴏᴍᴍɪɴɢ ꜱᴏᴏɴ!📌`.trim()
 if (m.isGroup) {
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
 let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }  
