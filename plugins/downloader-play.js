@@ -87,9 +87,9 @@ await conn.reply(m.chat, '*[❗] 𝙴𝚁𝚁𝙾𝚁*', m)}}}
 }} catch {
 throw "*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁,*"}
 }
-handler.help = ["play", "play2"].map((v) => v + " < busqueda >")
+handler.help = ["song", "video"].map((v) => v + " < busqueda >")
 handler.tags = ["downloader"]
-handler.command = /^play2?$/i
+handler.command = /^video?$/i
 export default handler
 
 async function search(query, options = {}) {
