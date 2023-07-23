@@ -89,7 +89,7 @@ throw "*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁,*"}
 }
 handler.help = ["song", "video"].map((v) => v + " < busqueda >")
 handler.tags = ["downloader"]
-handler.command = /^video?$/i
+handler.command = /^song?$/i
 export default handler
 
 async function search(query, options = {}) {
