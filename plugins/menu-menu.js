@@ -3,7 +3,7 @@ let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isP
 if (usedPrefix == 'a' || usedPrefix == 'A') return    
 try {
 let pp = imagen4
-let pt = './media/queen.mp3'
+let voice = './media/queen.mp3'
 let img =  './DARK.jpg'
 let d = new Date(new Date + 3600000)
 let locale = 'es'
