@@ -10,7 +10,7 @@ const yt_play = await search(args.join(" "))
 let additionalText = ''
 if (command === 'song') {
 additionalText = 'audio 🔊'
-} else if (command === 'video') {
+} else if (command === 'song') {
 additionalText = 'video 🎥'}
 let texto1 = `*◉——⌈🔊 YOUTUBE PLAY 🔊⌋——◉*\n
 ❏ 📌 *Title:* ${yt_play[0].title}
