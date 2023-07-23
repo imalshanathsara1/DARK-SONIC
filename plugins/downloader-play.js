@@ -4,7 +4,7 @@ import ytdl from 'ytdl-core'
 import axios from 'axios'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 let handler = async (m, { conn, command, args, text, usedPrefix }) => {
-if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗]error*\n\n*—◉:*\n*${usedPrefix + command} Good Feeling - Flo Rida*`
+if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗]error*\n\n*—◉:*EG-\n*${usedPrefix + command} LELENA*`
 try {
 const yt_play = await search(args.join(" "))
 let additionalText = ''
@@ -15,7 +15,7 @@ additionalText = 'video 🎥'}
 let texto1 = `*◉——⌈🔊 YOUTUBE PLAY 🔊⌋——◉*\n
 ❏ 📌 *Title:* ${yt_play[0].title}
 ❏ 📆 *Public:* ${yt_play[0].ago}
-❏ ⌚ *Duracion:* ${secondString(yt_play[0].duration.seconds)}
+❏ ⌚ *Duration:* ${secondString(yt_play[0].duration.seconds)}
 ❏ 👀 *Viwes:* ${`${MilesNumber(yt_play[0].views)}`}
 ❏ 👤 *Author:* ${yt_play[0].author.name}
 ❏ ⏯️ *Chanel:* ${yt_play[0].author.url}
@@ -24,7 +24,7 @@ let texto1 = `*◉——⌈🔊 YOUTUBE PLAY 🔊⌋——◉*\n
 ❏ 🔗 *Link:* ${yt_play[0].url}\n
 ❏ *⚔DARK QUEEN_ ${additionalText}, please waite!．．．_*`.trim()
 conn.sendMessage(m.chat, { image: { url: yt_play[0].thumbnail }, caption: texto1 }, { quoted: m })
-if (command == 'play') {
+if (command == 'song') {
 try {
 let q = '128kbps'
 let v = yt_play[0].url
@@ -57,9 +57,9 @@ let infoo = await ytdl.getInfo('https://youtu.be/' + __res[0].videoId)
 let ress = await ytdl.chooseFormat(infoo.formats, { filter: 'audioonly' })
 conn.sendMessage(m.chat, { audio: { url: ress.url }, fileName: __res[0].title + '.mp3', mimetype: 'audio/mp4' }, { quoted: m })  
 } catch {
-await conn.reply(m.chat, '*[❗] 𝙴𝚁𝚁𝙾𝚁 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝙴𝙻 𝙰𝚄𝙳𝙸𝙾*', m)}}}}}
+await conn.reply(m.chat, '*[❗] 𝙴𝚁𝚁𝙾𝚁*', m)}}}}}
 }  
-if (command == 'play2') {
+if (command == 'video') {
 try {
 let qu = '360'
 let q = qu + 'p'
@@ -68,7 +68,7 @@ const yt = await youtubedl(v).catch(async _ => await youtubedlv2(v))
 const dl_url = await yt.video[q].download()
 const ttl = await yt.title
 const size = await yt.video[q].fileSizeH
-await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `▢ 𝚃𝙸𝚃𝚄𝙻𝙾: ${ttl}\n▢ 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾: ${size}`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
+await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `▢ TITLE: ${ttl}\n▢ SIZE: ${size}`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
 } catch {   
 try {  
 let mediaa = await ytMp4(yt_play[0].url)
@@ -83,9 +83,9 @@ let n3 = lolh.result.size
 let n4 = lolh.result.thumbnail
 await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `▢ 𝚃𝙸𝚃𝚄𝙻𝙾: ${n}\n▢ 𝙿𝙴𝚂𝙾 𝙳𝙴𝙻 𝚅𝙸𝙳𝙴𝙾: ${n3}`, thumbnail: await fetch(n4) }, { quoted: m })
 } catch {
-await conn.reply(m.chat, '*[❗] 𝙴𝚁𝚁𝙾𝚁 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚁 𝙴𝙻 𝚅𝙸𝙳𝙴𝙾*', m)}}}    
+await conn.reply(m.chat, '*[❗] 𝙴𝚁𝚁𝙾𝚁*', m)}}}    
 }} catch {
-throw "*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*"}
+throw "*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁,*"}
 }
 handler.help = ["play", "play2"].map((v) => v + " < busqueda >")
 handler.tags = ["downloader"]
