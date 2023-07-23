@@ -3,7 +3,7 @@ let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isP
 if (usedPrefix == 'a' || usedPrefix == 'A') return    
 try {
 let pp = imagen4
-//let vn = './media/menu.mp3'
+let vn = './media/queen.mp3'
 let img =  './DARK.jpg'
 let d = new Date(new Date + 3600000)
 let locale = 'es'
@@ -23,16 +23,69 @@ var document = doc[Math.floor(Math.random() * doc.length)]
 let str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
 ║    ◉— *ᴅᴀʀᴋ Qᴜᴇᴇɴ* —◉
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
-║➤ *Hello, ${taguser}*
-║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
-║➤ *🎭Owner:* IMALSHA
-║➤ *🧵Number:* wa.me/94718628230
-║➤ *♟Bot ofc:* wa.me/94740196225
-║➤ *🛡up time:* ${uptime}
+👋*𝗛ello, ${taguser}*
+
+🧒*Owner:* *IMALSHA*
+
+⚔*Number:* wa.me/94718628230
+
+🖥*Bot ofc:* wa.me/94740196225
+
+⏰*Runtime:* ${uptime}
 ╰═══╡✯✯✯✯✯✯✯✯✯╞═══╯
 
-*❚█══ BOT IS NOT PUBLIC ══█❚*
-┗━━━━━━━━━━━━━━━━┛`.trim()
+🔮*.Menu*
+💠*get bot menu list*
+
+🔮*song*
+💠*Get download your any song*
+
+🔮*xnxxdl*
+💠*Get download your xnxx video*
+
+🔮*fbdl*
+💠*get download your fb video*
+
+🔮*owner*
+💠*get owner number*
+
+🔮*video*
+💠*get download yt video*
+
+🔮*xvideosdl*
+💠*get download your xvideo*
+
+🔮*tiktok*
+💠*get download your tiktok video*
+
+🔮*gdrive*
+💠*get download your gdrive link*
+
+🔮*mediafire*
+💠*get download mediafire file*
+
+🔮*wallpaper*
+💠*get download wallpaper*
+
+🔮*ringtone*
+💠*get download ringtone*
+
+🔮*spotify*
+💠*get download spotify*
+
+         
+         ⚔*GROUP MENU*⚔
+
+🔮*Kick*
+💠*kick participant in group*
+
+🔮*add*
+💠*add participant in group*
+
+🔮*promote*
+💠*participant promote to admin*
+
+📌*OTHER MENU COMMING SOON!*📌`.trim()
 if (m.isGroup) {
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
 let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }  
